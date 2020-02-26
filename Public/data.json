@@ -1,0 +1,217 @@
+ {
+   "users": [{
+
+       "id": 10,
+       "name": "Piotr",
+       "surname": "Kwiatkowski",
+       "age": "28",
+       "email": "piotr@gmail.com",
+       "address": {
+         "street": "Wiejska 45A",
+         "zipcode": "15-300",
+         "city": "Białystok"
+       },
+       "friend": true,
+       "likes": 4,
+       "like": false,
+       "photo": "../Images/oleg-ivanov--portrait-young-man-ginger-hair-unsplash.jpg",
+       "interests": [
+         "psychologia",
+         "muzyka"
+       ]
+     },
+     {
+       "id": 11,
+       "name": "Krzysztof",
+       "surname": "Nowak",
+       "age": 29,
+       "email": "iknow@wp.pl",
+       "address": {
+         "street": "Sienkiewicza 12/13",
+         "zipcode": "15-400",
+         "city": "Białystok"
+       },
+       "friend": false,
+       "likes": 12,
+       "photo": "../Images/johan-de-jager-man-in-glasses-unsplash.jpg",
+       "interests": [
+         "komiksy",
+         "gry wideo",
+         "anime"
+       ]
+     }, {
+       "id": 12,
+       "name": "Olga",
+       "surname": "Zielińska",
+       "age": 32,
+       "email": "olzie@gmail.com",
+       "address": {
+         "street": "Lipowa 8/10",
+         "zipcode": "15-500",
+         "city": "Białystok"
+       },
+       "friend": true,
+       "likes": 15,
+       "photo": "../Images/kate-kozyrka-portrait-of-a-smiling-woman-unsplash.jpg",
+       "interests": [
+         "Kino",
+         "muzyka"
+       ]
+     }, {
+       "id": 13,
+       "name": "Anastazja",
+       "surname": "Kowalska",
+       "age": 22,
+       "email": "kowalska@manga.pl",
+       "address": {
+         "street": "Mazowiecka 9B/44",
+         "zipcode": "15-600",
+         "city": "Białystok"
+       },
+       "friend": false,
+       "likes": 10,
+       "photo": "../Images/lucas-gouvea-woman-with-nose-rings-unsplash.jpg",
+       "interests": [
+         "manga",
+         "anime"
+       ]
+     },
+
+     {
+       "id": 14,
+       "name": "Barbara",
+       "surname": "Kowalska",
+       "age": "22",
+       "email": "kowalska@manga.pl",
+       "address": {
+         "street": "Mazowiecka 9B/44",
+         "zipcode": "15-600",
+         "city": "Białystok"
+       },
+       "friend": false,
+       "likes": 10,
+       "photo": "../Images/anastasiya-pavlova-portrait-woman-short-hair-unsplash.jpg",
+       "interests": [
+         "manga",
+         "anime"
+       ]
+     },
+
+
+
+
+     {
+       "id": 15,
+       "name": "Tomasz",
+       "surname": "Miauczyński",
+       "age": 58,
+       "email": "tomasz.miauczyński@gmail.com",
+       "address": {
+         "street": "E.Orzeszkowej 9a/22",
+         "zipcode": "41-303",
+         "city": "Dąbrowa Górnicza"
+       },
+       "friend": true,
+       "likes": 23,
+       "photo": "../Images/wassim-chouak-bearded-man-in-a-hoodie-unsplash.jpg",
+       "interests": [
+         "modelarstwo",
+         "historia"
+       ]
+     }, {
+       "id": 16,
+       "name": "Wojciech",
+       "surname": "Malinowski",
+       "age": 33,
+       "email": "wojciech.malinowski@gmail.com",
+       "address": {
+         "street": "Warszawska 93/24",
+         "zipcode": "60-684",
+         "city": "Poznań"
+       },
+       "friend": true,
+       "likes": 123,
+       "photo": "../Images/cesar-rincon-man-with-beard-and-curly-hairs-unsplash.jpg",
+       "interests": [
+         "modelarstwo",
+         "historia starożytna"
+       ]
+     }, {
+
+       "id": 17,
+       "woman": true,
+       "name": "Alicja",
+       "surname": "Wesołowska",
+       "age": 25,
+       "email": "alicja.wesołowska@gmail.com",
+       "address": {
+         "street": "Piłsudskiego 65",
+         "zipcode": "41-200",
+         "city": "Żywiec"
+       },
+       "friend": true,
+       "likes": 13,
+       "photo": "../Images/hiva-sharifi-smiling-young-woman-unsplash.jpg",
+       "interests": [
+         "przyroda",
+         "podróże"
+       ]
+     }, {
+       "id": 18,
+       "woman": true,
+       "name": "Wanda",
+       "surname": "Kwiatkowska",
+       "age": 24,
+       "email": "wanda.kwiatkowska@gmail.com",
+       "address": {
+         "street": "Tysiąclecia 25/55",
+         "zipcode": "60-682",
+         "city": "Zakopane"
+       },
+       "friend": false,
+       "likes": 8,
+       "photo": "../Images/lucas-gouvea-woman-with-nose-rings-unsplash.jpg",
+       "interests": [
+         "wspinaczka",
+         "hodowla owiec"
+       ]
+     }, {
+       "id": 19,
+       "name": "Maciej",
+       "surname": "Beksiński",
+       "age": 32,
+       "email": "maciej.beksiński@gmail.com",
+       "address": {
+         "street": "Sienkiewicza 22",
+         "zipcode": "22-682",
+         "city": "Gdańsk"
+       },
+       "friend": true,
+       "likes": 18,
+       "photo": "../Images/outi-mahonen-man-in-green-blouse-unsplash.jpg",
+       "interests": [
+         "sztuki walki",
+         "warcaby"
+       ]
+     }, {
+       "id": 20,
+       "woman": true,
+       "name": "Maria",
+       "surname": "Peszkowska",
+       "age": 30,
+       "email": "maria.peszkowska@gmail.com",
+       "address": {
+         "street": "Kasprzaka 56/33",
+         "zipcode": "22-300",
+         "city": "Olsztyn"
+       },
+       "friend": true,
+       "likes": 28,
+       "photo": "../Images/oscar-nord-woman-with-dark-curly-hair-unsplash.jpg",
+       "interests": [
+         "jazda konna",
+         "łyżwiarstwo figurowe"
+       ]
+     }
+   ]
+ }

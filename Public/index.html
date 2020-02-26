@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuetify users</title>
+    <link rel="icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div id="app" class="theme-light">
+
+
+        <v-app>
+            <v-content>
+                <v-app-bar dark class="deep-orange">
+                    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+
+                    <v-toolbar-title>Logo</v-toolbar-title>
+
+                    <v-spacer></v-spacer>
+                    <v-btn icon>
+                        <v-icon>mdi-apps</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                        <v-icon>mdi-charity</v-icon>
+                    </v-btn>
+                    <v-btn icon>
+                        <v-icon>mdi-artist</v-icon>
+                    </v-btn>
+
+
+                </v-app-bar>
+                <router-view>
+                </router-view>
+
+                <v-container class="mt-4 d-flex">
+
+
+                    <v-card class="d-flex py-4 px-5 mr-5 justify-start" max-width="400px">
+                        <v-form>
+                            <v-item-group class="d-flex">
+                                <v-icon class="mr-1" aria-hidden="true">mdi-magnify</v-icon>
+                                <v-text-field @keyup.enter="searchUser" v-model="search" label="Wyszukaj użytkownika"
+                                    color="indigo accent-5">
+                                </v-text-field>
+                                <v-btn @click.prevent="searchUser" class="align-self-center ml-5 deep-orange--text">
+                                    Szukaj
+                                </v-btn>
+                            </v-item-group>
+                        </v-form>
+                    </v-card>
+
+
+                    <v-card flat>
+                        <v-card-actions class="my-5">
+                            <v-btn @click="sortAZ" dark class="light-green darken-1 ">Sortuj A-Z</v-btn>
+                            <v-btn @click="sortZA" dark color="light-green darken-1">Sortuj Z-A</v-btn>
+                            <v-btn @click="showUsers" dark color="light-green darken-4" small>Wróć do listy użytkowników
+                            </v-btn>
+                        </v-card-actions>
+                    </v-card>
+
+                </v-container>
+
+                <v-container fluid class="mx-auto d-flex flex-wrap">
+                    <v-card v-if="persons.length == 0 && users.length == 0" class="mx-auto">
+                        <v-card-text class="text-center">
+                            <h2>Lista użytkowników jest pusta</h2>
+                        </v-card-text>
+                    </v-card>
+                    <template v-if="searching && users.length<=1">
+
+                        <userprofile v-for="item in users" :key="item.id" :id=item.id :href="'#' + item.id"
+                            :person="item" @usun="removeProfile">
+                        </userprofile>
+                    </template>
+                    <template v-else>
+
+                        <userprofile v-for="item in persons" :key="item.id" :id=item.id :href="'#' + item.id"
+                            :person="item" @usun="removeProfile">
+                        </userprofile>
+                    </template>
+
+                </v-container>
+                <v-card class="mb-10">
+                    <v-tabs>
+                        <v-tabs-slider color="light-green darken-1" class="mx-auto"></v-tabs-slider>
+
+                        <v-tab v-for="i in 10" :key="i" :href="'#user-' + i">
+                            {{ i }}
+                        </v-tab>
+                    </v-tabs>
+                </v-card>
+
+                <v-footer absolute class="black deep-orange--text">&copy 2020</v-footer>
+            </v-content>
+        </v-app>
+        </template>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"> </script>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
